@@ -8,6 +8,7 @@ blurb regarding whatever you just uploaded!
 ## Installation: How to run on your own local machine
 
 First, clone this repo and cd into the clarifai-demo directory.
+Install the correct packages using pip.
 
 ```
 $ git clone https://github.com/bryanyan/clarifai-champs.git
