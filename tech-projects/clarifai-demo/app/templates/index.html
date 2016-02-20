@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block body %}
+<script>
+function getImg() {
+	var imagesElement = document.getElementById('images');
+	imagesElement.innerHTML = '';
+	var url = document.getElementById('myURL').value;
+	var div = document.createElement('div');
+	div.className = "imageWrapper";
+	var img = document.createElement('img');
+	img.src=url;
+	img.height = 400;
+	img.width = 600;
+	div.appendChild(img);
+	document.getElementById('images').appendChild(div);
+	return;
+}
+</script>
+<script>
+  $(function() {
+    var submit_form = function(e) {
+      $.getJSON($SCRIPT_ROOT + '/_getImage', {
+        urlname: $('input[name="urlname"]').val(),
+      }, function(data) {
+        $('#tags').text(data.result);
+        $('#joke').text(data.joke);
+        $('#funFact').text(data.wiki);
+        $('#wikiURL').text(data.readMore);
+        $('input[name=urlname]').focus().select();
+      });
+      return false;
+    };
+    $('a#requester').bind('click', submit_form);
+    $('input[name=urlname]').focus();
+  });
+</script>
+
+
+<h1> Clarifai Demo: Paste Image URL </h1>
+<input type="url" name="urlname" id="myURL">
+<p><a href=# id="requester", onclick=getImg()>Get tags from URL!</a>
+<div id="images"> </div>
+<br>
+<div id="tags"> </div>
+<br>
+<div id="joke"> </div>
+<br>
+<div id="funFact"> </div>
+<br>
+<div id="wikiURL"> </div>
+
+{% endblock %}
