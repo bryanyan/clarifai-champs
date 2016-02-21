@@ -1,0 +1,19 @@
+<li id="workout-<%= workout.id %>">
+  <%= link_to gravatar_for(workout.user, size: 50), workout.user %>
+  <span class="user"><%= link_to workout.user.name, workout.user %></span>
+  <span class="content"><%= workout.day %> </span>
+  <span class="content"><%= workout.exercise1 %></span>
+  <span class="content"><%= workout.exercise2 %></span>
+  <span class="content"><%= workout.exercise3 %></span>
+  <span class="content"><%= workout.exercise4 %></span>
+  <span class="content"><%= workout.exercise5 %></span>
+  <span class="content"><%= workout.exercise6 %></span>
+  <span class="content"><%= workout.tag %></span>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(workout.created_at) %> ago.
+    <% if current_user?(workout.user) %>
+      <%= link_to "delete", workout, method: :delete,
+                                       data: { confirm: "You sure?" } %>
+    <% end %>
+  </span>
+</li>

@@ -1,0 +1,43 @@
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        var cal = new Calendar();
+        cal.generateHTML();
+        document.getElementById("calendar").innerHTML = cal.getHTML();
+    });
+
+</script>
+
+<% if logged_in? %>
+  <div class="row">
+    <aside class="col-md-4">
+      <section class="user_info">
+        <%= render 'shared/user_info' %>
+      </section>
+      <section class="stats">
+        <%= render 'shared/stats' %>
+      </section>
+      <section class="workout_form">
+        <%= render 'shared/workout_form' %>
+      </section>
+    </aside>
+    <div class="col-md-8">
+      <h3>Workout Feed</h3>
+      <%= render 'shared/feed' %>
+    </div>
+  </div>
+<% else %>
+
+<div id="calendar">
+</div>
+
+<div class="text">
+	<h3 style='color: white'> Log your workouts and track your fitness goals. </h3>
+</div>
+
+<div class="signup">
+	<%= link_to "Sign Up", signup_path, class: "btn btn-lg btn-primary", style:"margin-left: 60px;" %>
+	<%= link_to "Login", login_path, class: "btn btn-lg btn-primary gr", style: "width: 98.6875px; margin-left: 60px;" %>
+</div>
+
+<% end %>

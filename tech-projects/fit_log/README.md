@@ -1,1 +1,4 @@
-# See [here]  (https://github.com/bryanyan/Fitness-Log) for personal project
+## TODO
+* STYLING ON EVERYTHING!!!
+* Editing workouts
+* Pages for sort workout by tag

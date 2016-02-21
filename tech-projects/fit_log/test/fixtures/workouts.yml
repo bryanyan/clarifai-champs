@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  exercise1: MyText
+  exercise2: MyText
+  exercise3: MyText
+  exercise4: MyText
+  exercise5: MyText
+  exercise6: MyText
+  user_id: 
+
+two:
+  exercise1: MyText
+  exercise2: MyText
+  exercise3: MyText
+  exercise4: MyText
+  exercise5: MyText
+  exercise6: MyText
+  user_id: 

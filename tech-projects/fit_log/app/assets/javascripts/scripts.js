@@ -1,0 +1,80 @@
+//Minimally modified code for my personal case,
+//taken from http://jszen.blogspot.com/2007/03/how-to-build-simple-calendar-with.html
+
+var monthNames = ["January", "February", "March", "April", "May", "June",
+                  "July", "August", "September", "October", "November",
+                  "December"];
+
+var dayLabels = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+var daysInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+var date = new Date();
+
+function Calendar(month, year) {
+    this.month = (isNaN(month) || month === null) ? date.getMonth() : month;
+    this.year  = (isNaN(year) || year === null) ? date.getFullYear() : year;
+    this.html = '';
+}
+
+Calendar.prototype.generateHTML = function() {
+
+    // get first day of month
+    var firstDay = new Date(this.year, this.month, 1);
+    var startingDay = firstDay.getDay();
+  
+    // find number of days in month
+    var monthLength = daysInMonth[this.month];
+  
+    // compensate for leap year
+    if (this.month === 1) { // February only!
+        if((this.year % 4 === 0 && this.year % 100 != 0) || this.year % 400 === 0){
+            monthLength = 29;
+        }
+    }
+  
+    // do the header
+    var monthName = monthNames[this.month]
+    var html = '<h1 id="month">' + monthName + "&nbsp;" + this.year + '</h1>';
+    html += '<table> <tr>';
+
+    for(var i = 0; i <= 6; i++ ) {
+        html += '<td>';
+        html += dayLabels[i];
+        html += '</td>';
+    }
+    html += '</tr> <tr>';
+
+    // fill in the days
+    var day = 1;
+    // this loop is for is weeks (rows)
+    for (var i = 0; i < 9; i++) {
+    // this loop is for weekdays (cells)
+        for (var j = 0; j < 7; j++) { 
+            if (date.getDate() === day) {
+                html += '<td class=current>';
+            }
+            else {
+                html += '<td>';
+            }
+            if (day <= monthLength && (i > 0 || j >= startingDay)) {
+                html += day;
+                day++;
+            }
+            html += '</td>';
+        }
+    // stop making rows if we've run out of days
+        if (day > monthLength) {
+            break;
+        } else {
+            html += '</tr> <tr>';
+        }
+    }
+    html += '</tr> </table>';
+
+    this.html = html;
+}
+
+Calendar.prototype.getHTML = function() {
+  return this.html;
+}

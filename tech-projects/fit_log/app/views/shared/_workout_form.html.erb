@@ -1,0 +1,14 @@
+<%= form_for(@workout) do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+  <div class="field">
+    <%= f.text_area :exercise1, placeholder: "First exercise..." %>
+    <%= f.text_area :exercise2, placeholder: "Second exercise..." %>
+    <%= f.text_area :exercise3, placeholder: "Third exercise..." %>
+    <%= f.text_area :exercise4, placeholder: "Fourth exercise..." %>
+    <%= f.text_area :exercise5, placeholder: "Fifth exercise..." %>
+    <%= f.text_area :exercise6, placeholder: "Sixth exercise..." %>
+    <%= f.text_area :tag, placeholder: "Tags/Muscle Group..." %>
+    <%= f.text_area :day, placeholder: "Day of Workout..." %>
+  </div>
+  <%= f.submit "Post", class: "btn btn-primary" %>
+<% end %>
