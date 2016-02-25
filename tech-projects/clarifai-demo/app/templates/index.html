@@ -22,10 +22,10 @@ function getImg() {
       $.getJSON($SCRIPT_ROOT + '/_getImage', {
         urlname: $('input[name="urlname"]').val(),
       }, function(data) {
-        $('#tags').text(data.result);
-        $('#joke').text(data.joke);
-        $('#funFact').text(data.wiki);
-        $('#wikiURL').text(data.readMore);
+        $('#tags').html((data.result).bold());
+        $('#joke').html((data.joke).substr(0, 36).bold() + (data.joke).substr(36, (data.joke).length));
+        $('#funFact').html((data.wiki).substr(0, 9).bold() + (data.wiki).substr(9, (data.wiki).length));
+        $('#wikiURL').html((data.readMore).substr(0, 15).bold() + (data.readMore).substr(15, (data.readMore).length));
         $('input[name=urlname]').focus().select();
       });
       return false;
@@ -35,18 +35,19 @@ function getImg() {
   });
 </script>
 
-
-<h1> Clarifai Demo: Paste Image URL </h1>
-<input type="url" name="urlname" id="myURL">
-<p><a href=# id="requester", onclick=getImg()>Get tags from URL!</a>
-<div id="images"> </div>
-<br>
-<div id="tags"> </div>
-<br>
-<div id="joke"> </div>
-<br>
-<div id="funFact"> </div>
-<br>
-<div id="wikiURL"> </div>
+<div class="container">
+    <h1> Did You Know That? with Chuck Norris </h1>
+    <div class="input">
+        <input type="url" name="urlname" id="myURL">
+    </div>
+    <button type="button" class="btn btn-info">
+        <a href=# id="requester", onclick=getImg()> Get tags from URL!</a>
+    </button>
+    <div id="images"> </div>
+    <div id="tags"> </div>
+    <div id="joke"> </div>
+    <div id="funFact"> </div>
+    <div id="wikiURL"> </div>
+</div>
 
 {% endblock %}

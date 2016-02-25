@@ -3,3 +3,4 @@
 /app/*.pyc
 .DS_Store
 *.pyc
+/app/keys.py

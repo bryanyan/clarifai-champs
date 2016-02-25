@@ -48,8 +48,14 @@ def getImage():
 						   wiki="Fun fact: " + page.summary + "...",
 						   readMore="Read more here: " + page.url)
 		except:
-			return jsonify(result="Failed to locate image or API keys failed!")
-	return jsonify(result="No input!")
+			return jsonify(result="API keys failed!",
+				           joke="No image!",
+				           wiki="No image!",
+				           readMore="No image!")
+	return jsonify(result="No input or failed to locate image!",
+		           joke="No image!",
+		           wiki="No image!",
+		           readMore="No image!")
 
 @app.route('/')
 @app.route('/index')

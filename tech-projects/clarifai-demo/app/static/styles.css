@@ -1,0 +1,17 @@
+.container {
+	margin-top: 25px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.container > * {
+	margin-top: 50px;
+}
+
+#requester {
+	color: white;
+}
+
+#wikiURL {
+	margin-bottom: 15px;
+}

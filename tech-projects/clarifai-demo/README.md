@@ -33,7 +33,4 @@ Chuck Norris jokes from: http://www.icndb.com/
 <br>
 How to set up Clarifai API using Python: https://github.com/Clarifai/clarifai-python
 
-## TODO
-* Styling
-* Clear up error message on failure (either failed to locate image or API key fail, not both)
 
