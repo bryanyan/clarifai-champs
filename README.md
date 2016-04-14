@@ -8,12 +8,16 @@ Projects
 1. Technical Demo Project
 	* FitLog - Personal Project
 	* Did You Know That? with Chuck Norris - Clarifai API Demo
+	* Feedback
 2. Public Speaking Project
-	* Filler
-	* Filler
+	* Professional Biography and CFP Proposal
+	* Tech Talk and Workshop on Flask
+	* Feedback
 3. Technical Writing Project
-	* Filler
-	* Filler
+	* D3.js Techblog
+	* D3.js Tutorial - Creating a Piechart
+	* Feedback
 4. Event Planning Project
 	* Filler
 	* Filler
+	* Feedback

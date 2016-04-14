@@ -1,0 +1,17 @@
+Chuck Norris
+This is such a fun idea.  First thing I notice is your commit messages.  As fun as “finally done” and “finally fixed stuff” are, it’d be better if you included like, “updated README” or “fixed chuck function” or something.
+Solid README.  Nice work describing what the project is and how to run it.  This is a really fun way to get people engaged!
+Nice work on the Clarifai portion.  It’s easy to see that this is the quickest part of the project, and that anyone can integrate it, which is the most important part!
+Nitpick: you use a combination of double quotes and single quotes throughout the project.  I’d pick one, and stick with it!
+Might be worth it to make separate JS files for the functions in the HTML pages, but they’re small enough code chunks that I see why you did it.
+I think it’d be great if you hosted this online somewhere, so after you demo you can say to your audience, “yo check out this project at chuck.biz” or whatever.  
+Solid demo overall!
+
+FitLog
+Commit messages could be more descriptive. It is a lot of code for only a few commits, be sure to update GitHub along the way. This is good practice so a beginner can understand why you did what!
+Good adding a TODO section so people can make thoughtful PRs/you can work more on them.  If you’re interested, GitHub added PR templates for that sort of thing: https://github.com/blog/2111-issue-and-pull-request-templates 
+It is cool that you connected this project with one of your previous ones!
+Worked out of the box!
+Would be cool to host online so the user can see it instead of having to install everything.
+Really clean code, would be good to document some of it though since the messages aren’t explicit.  Nitpicking again about choosing either single or double quotes and sticking with it.
+Overall, super fun project.  I’d use this in real life.
