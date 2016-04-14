@@ -10,7 +10,7 @@ Projects
 	* Did You Know That? with Chuck Norris - Clarifai API Demo
 	* Feedback
 2. Public Speaking Project
-	* Professional Biography and CFP Proposal
+	* Professional Biography and CFP (Talk Proposal)
 	* Tech Talk and Workshop on Flask
 	* Feedback
 3. Technical Writing Project

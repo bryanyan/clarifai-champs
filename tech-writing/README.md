@@ -1,0 +1,2 @@
+* <b> D3.js Techblog: <b> [bryanyan.github.io/techblog.html](https://bryanyan.github.io/techblog.html)
+* <b> D3.js Tutorial - Creating a Piechart: <b> [bryanyan.github.io/tutorial.html](https:///bryanyan.github.io/tutorial.html) 
