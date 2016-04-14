@@ -23,13 +23,16 @@
   text-decoration: none;
 }
 
-*{margin:0;padding:0;}
+* {
+  margin:0;
+  padding:0;
+}
 
-body{
+body {
   background:#445566;
 }
 
-#calendar{
+#calendar {
   width: 400px;
   margin: 0 auto;
   margin-top: 7.5%;
@@ -41,7 +44,7 @@ body{
   box-shadow:0 0 50px -14px rgba(0,0,0,.8);
 }
 
-#calendar h1{
+#calendar h1 {
   background:#ee3333;
   border-radius:5px 5px 0 0;
   margin-bottom: 0px;
@@ -55,7 +58,7 @@ body{
   text-shadow:0 0 10px rgba(0,0,0,.8);
 }
 
-#calendar table{
+#calendar table {
   border-top:1px solid #ddd;
   border-left:1px solid #ddd;
   border-spacing:0;
@@ -63,7 +66,7 @@ body{
   width: 400px;
 }
 
-#calendar td{
+#calendar td {
   width:38px;
   height:38px;
   background:#eee;
@@ -75,24 +78,28 @@ body{
   -webkit-transition:background .3s;
 }
 
-#calendar td:hover:not(.current){
+#calendar td:hover:not(.current) {
   background:#ddd;
 }
 
-#calendar .lastmonth,#calendar .nextmonth,#calendar .nextmonth ~ *{
+#calendar .lastmonth,#calendar .nextmonth,#calendar .nextmonth ~ * {
   background:#fff;
   color:#999;
 }
 
-#calendar .current{
+#calendar .current {
   background:#ee3333;
   font-weight:700;
   color:#fff;
   text-shadow:0 0 10px rgba(0,0,0,.5);
 }
 
-#calendar tr:last-of-type td:first-of-type{border-radius:0 0 0 5px;}
-#calendar tr:last-of-type td:last-of-type{border-radius:0 0 5px 0;}
+#calendar tr:last-of-type td:first-of-type {
+  border-radius:0 0 0 5px;
+}
+#calendar tr:last-of-type td:last-of-type {
+  border-radius:0 0 5px 0;
+}
 
 
 .text {
@@ -120,6 +127,10 @@ footer {
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: white;
+  position: absolute;
+  bottom: 0;
+  left: 55px; 
+  right: 55px;;
 }
 
 footer a {
@@ -146,7 +157,7 @@ footer ul li {
 }
 
 .header {
-  margin-top: 100px;
+  margin-top: 10%;
   margin-left: 45%;
 }
 
@@ -155,6 +166,10 @@ footer ul li {
   -moz-box-sizing:    border-box;
   -webkit-box-sizing: border-box;
   box-sizing:         border-box;
+}
+
+form > * {
+  margin-top: 5px;
 }
 
 
@@ -186,6 +201,10 @@ input {
   .form-control {
     color: $state-danger-text;
   }
+}
+
+.alert {
+  margin-top: 60px;
 }
 
 .alert-success {
@@ -308,6 +327,3 @@ span.picture {
   padding: 0;
 }
 
-.row {
-  margin-top: 100px;
-}
