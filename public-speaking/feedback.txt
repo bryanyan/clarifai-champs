@@ -1,0 +1,8 @@
+Bio: 
+Love this bio, one of the best I’ve seen in the group so far, kudos!  My only super nitpicky edit is adding a comma before ScottyLabs (“and is heavily involved with the school’s technical club, ScottyLabs”), and after Carnegie Mellon University. :)
+
+CFP:
+GREAT work here.  Your abstract explains in every single sentence why it’s important to know this information (which is not easy to do), and your description is just descriptive enough that people know what they’re getting into but are still curious about what they’ll learn.  Really excellent job, you should submit this!
+
+Talk:
+Fun slides.  Just going through each of them I wasn’t bored (I liked the pictures and diagrams).  Slides 7-10 had a LOT of words.  They could have been broken down a bit more so that people are listening to what you’re saying rather than reading the slides.  For example, the CRUD slide would work just fine if all it had was bullets with Create, Read, Update, Delete, and the Basic Web Concepts slide could just have the HTTP methods and the diagram.  This is where speaker notes are really handy, and the slides should be just an overview!  Also, great job including the “what’s next” section.  That’ll keep people learning, and referencing your talk in their minds as they learn.  Overall, great work. :)
