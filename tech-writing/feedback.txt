@@ -1,0 +1,7 @@
+D3.js: Bringing Data to Life
+This is a super fun blog post!  You can see that you’re really into the topic, and honestly I saved almost every single link you posted in it to learn about more for later.  Honestly I don’t have any criticisms, this was concise, example-driven, and to the point.  Great job!!
+
+D3.js Mini-Tutorial Creating a Simple Piechart
+Nitpick: you spelled “simple” as “siple” in the first paragraph.  One thing that might be useful for your future tutorials is to have <pre> tags with code samples instead of screenshots of the code, so someone can copy and paste along with you.  Another very nitpicky thing: it’s standard to use single quotes in JS and double quotes in HTML.  But that doesn’t matter as much.  Overall this is a really good intro tutorial!
+
+You should turn this site into a Jekyll blog and post more.  You have a writing talent, and I’m not just saying that.  Everything you’ve written is very approachable, and you have some funny bits here and there that makes everything fun to read.  Keep it up!

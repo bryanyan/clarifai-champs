@@ -17,7 +17,3 @@ Projects
 	* D3.js Techblog
 	* D3.js Tutorial - Creating a Piechart
 	* Feedback
-4. Event Planning Project
-	* Filler
-	* Filler
-	* Feedback
